@@ -1,76 +1,62 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	
-	<meta charset="utf-8">
-	
-	<title>Sam Cordrey Portfolio</title>
-	
-	<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VisioCorp - Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+    <style>
+    .hero {
+      background: linear-gradient(to right, #38bdf8, #a5f3fc), url('img/visiocorp_bg.jpg') no-repeat center center/cover;
+      text-align: center;
+      padding: 5rem 2rem;
+      color:black;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+        @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+         @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+    </style>
 </head>
-
-
 <body>
-
-  <div id="container">
-      
-<header> 
-    <h1>Sam Cordrey</h1>
-    <h2>Art Director - Graphic Designer - Web Developer</h2>
-</header>
-      
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="bio.html">Bio</a></li>
-    <li><a href="artdirection.html">Art Direction</a></li>
-    <li><a href="graphicdesign.html">Graphic Design</a></li>
-    <li><a href="WD/index.html">Web Development</a></li>
-    <li><a href="resume.html">Resume</a></li>
-    <li><a href="contact.html">Contact Me</a></li>
-  </ul>         
+<div id="container">
+    <header>
+    <img src="img/visiocorp_logo1.PNG" alt="VisioCorp Logo" class="logo">
+    
+ <nav>
+  <ul class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="membership.html">Recruit</a>
+    <a href="exchange.html">The Exchange</a>
+  </ul>
 </nav>
-      
-      
-<main>
-<figure>
-        <img src="img/PortfolioPicture.jpg" alt="Sam Cordrey" class="profile-pic">
-        <figcaption>Courtesy of Sam Cordrey</figcaption>
-        </figure>
-    <section>
-    <p>
-       Welcome to my portfolio! I’m Samantha, an art director, graphic designer, and beginner web developer, passionate about crafting visually compelling stories.</p>
-    <p>
-        Here, you’ll find a collection of projects where creativity meets strategy—from bold ad campaigns to sleek web designs. I’m dedicated to transforming ideas into impactful visuals that engage and inspire.</p>
 
-    <p>
-        Feel free to explore my work, and if you’re looking for a creative partner to bring your next project to life, let’s connect—I’d love to collaborate!</p>
-    </section>
+</header>
+  <header class="hero">
+    <h1>Welcome to VisioCorp</h1>
+    <p>the world leader in predictive technology. Our Future Sight Glasses offer unparalleled access to tomorrow’s decisions today, ensuring you never make a wrong move again. The cost? A small price to pay for absolute certainty.</p>
+    <p>For centuries, humankind has sought control over the unknown—through prophecy, science, and data. Now, the future is no longer a mystery; it is a choice. Will you take control, or be left behind?</p>
+    <p>The decision is yours.</p>
+    <a href="research.html" class="button">Learn More</a>
+  </header>
     
-    
-    
-    
-    
-    
-</main>
-
-
-
-<footer> 
-    <p>&#169; 2025 Sam Cordrey. Website created by Sam Cordrey.</p>
-    
-</footer>
-      
-  </div><!-- close "container" -->
-  
-
+</div>
+    <footer>
+        <p>&copy; 2025 VisioCorp. All rights reserved.</p>
+        <p>Some images and audio on this site were created using a combination of AI tools and my own creative input.</p>
+  </footer>
 </body>
-	
-</html> 
+</html>
