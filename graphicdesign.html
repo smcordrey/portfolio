@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title>Graphic Design</title>
+	
+	<link rel="stylesheet" href="css/style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">	
+	
+      <style>
+    /* Lightbox Styles */
+    #lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    #lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      box-shadow: 0 0 20px white;
+      border-radius: 8px;
+    }
+
+    #lightbox span {
+      position: absolute;
+      top: 30px;
+      right: 40px;
+      font-size: 40px;
+      color: white;
+      cursor: pointer;
+    }
+          #lightbox .prev,
+#lightbox .next {
+  position: absolute;
+  top: 50%;
+  font-size: 40px;
+  color: white;
+  padding: 16px;
+  cursor: pointer;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+#lightbox .prev { left: 30px; }
+#lightbox .next { right: 30px; }
+
+  </style>
+</head>
+
+
+<body>
+
+  <div id="container">
+      <header> 
+    <h1>Sam Cordrey</h1>
+    <h2>Graphic Design Work</h2>
+</header>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="bio.html">Bio</a></li>
+    <li><a href="artdirection.html">Art Direction</a></li>
+    <li><a href="graphicdesign.html">Graphic Design</a></li>
+    <li><a href="WD/index.html">Web Development</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="contact.html">Contact Me</a></li>
+  </ul>         
+</nav>
+<header> <h2><div class="section">Divine Manifest</div></h2></header>
+    <section class="projects">
+    <figure>
+        <img src="GraphicDesign/DMLogo.jpg" class="clickable">
+        </figure>
+    <figure>
+        <img src="GraphicDesign/DMBusinessCards.jpg" class="clickable">
+    </figure>
+        <div class="text-block">
+            <p>I designed a visually compelling logo for Divine Manifest that captured the brand’s essence and values, and created professional business cards that clearly communicated the salon’s identity and services.</p>
+        </div>
+    </section>
+    
+    
+        <header> <h2> <div class="section">Cozy Cup Cafe Logo</div></h2>
+        </header>
+    <section class="projects">
+        <figure>
+        <img src="GraphicDesign/SCordrey_P3_logomockup3_031725.jpg" class="clickable">
+        </figure>
+        <figure>
+        <img src="GraphicDesign/SCordrey_P3_logomockup4_031725.jpg" class="clickable">
+        </figure>
+    <figure>
+        <img src="GraphicDesign/SCordrey_P3_LogoMockup1_031725.jpg" class="clickable">
+    </figure>
+        <div class="text-block">
+        <p>During the design process for my coffee cup logo, I went through multiple trials to refine both the visual form and typography. I started with initial sketches, experimenting with different cup shapes and steam designs to create a modern yet inviting aesthetic. After selecting the strongest concept, I transitioned to Illustrator, refining the structure and ensuring scalability. The typography was a crucial element—I explored various typefaces to find one that complemented the logo's style while maintaining readability and brand personality. Through iterative adjustments, I achieved a balanced composition that effectively conveys warmth, sophistication, and the essence of a contemporary coffee brand.</p>
+        </div>
+    </section>
+    
+    
+        <header> <h2><div class="section">Unfiltered, Love Bookcover</div></h2></header>
+        <section class="projects">
+        <figure>
+        <img src="GraphicDesign/SCordrey_P4_MockUp_042125.jpg" class="clickable">
+        </figure>
+            
+            <div class="text-block">
+        <p>For the cover of Love, Unfiltered, I wanted to visually express the duality between online personas and authentic, everyday life. The design splits the main character in half—one side bathed in soft, floral warmth, dressed up and camera-ready; the other side more raw and real, with a hoodie, messy bun, and a neutral, textured background. This split illustrates the central theme of the book: embracing the messy, beautiful truth beneath the filters. The genre is romantic comedy with a coming-of-age twist, and the emotion I aimed to capture is a mix of sincerity, vulnerability, and lighthearted charm. The target audience is young adults and teens, especially those growing up in the age of social media, who are navigating identity, love, and the pressure to always appear perfect.</p>
+            </div>
+        
+    </section>
+    
+
+        <header><h2><div class="section">Recreating It Ends With Us Book Cover</div></h2>
+        </header>
+    <section class="projects">
+        <figure>
+        <img src="GraphicDesign/BookCover2.0.jpg" class="clickable">
+        </figure>
+        
+        <div class="text-block">
+        <p> One of my favorite books is It Ends With Us by Colleen Hoover. I was so invested in the story that I read it in just one day. For the cover redesign, I chose lilies, reflecting the main character Lily Bloom. The wilted lilies represent the downfall of her relationship and the emotional toll it took on her, while the blooming lilies symbolize her rebirth after leaving the abusive relationship with Ryle. The deep red color evokes both the passion and the pain Lily experiences—showing how love and suffering are intricately connected throughout her journey.
+</p>
+        </div>
+    </section>
+    
+
+
+
+  </div><!-- close "container" -->
+    <div id="lightbox">
+  <span id="close">&times;</span>
+  <img id="lightbox-img" src="" alt="Full View">
+  <a class="prev" onclick="changeImage(-1)">❮</a>
+  <a class="next" onclick="changeImage(1)">❯</a>
+</div>
+
+   <script>
+  const allImages = document.querySelectorAll('.projects img');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const closeBtn = document.getElementById('close');
+
+  let currentIndex = 0;
+
+  allImages.forEach((img, index) => {
+    img.addEventListener('click', () => {
+      currentIndex = index;
+      openLightbox();
+    });
+  });
+
+  function openLightbox() {
+    lightboxImg.src = allImages[currentIndex].src;
+    lightbox.style.display = 'flex';
+  }
+
+  function changeImage(direction) {
+    currentIndex += direction;
+    if (currentIndex < 0) currentIndex = allImages.length - 1;
+    if (currentIndex >= allImages.length) currentIndex = 0;
+    lightboxImg.src = allImages[currentIndex].src;
+  }
+
+  closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+    }
+  });
+</script>
+
+
+</body>
+	
+</html> 

@@ -1,0 +1,69 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:15px;
+	padding:10px;
+	height:100%;
+    width:auto;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+    background: #A6D6FC;
+    opacity: .55;
+}
+
+header{
+    margin-left: 860px;
+}
+
+body {
+    font-family: "Sour Gummy", sans-serif;
+    width: 100%;
+}
+
+#container {
+    position: relative;
+    width: relative;
+    height:inherit;
+    margin: auto;
+}
+
+p {
+    font-family: "Sour Gummy";
+    font-size: 4em;
+    color:#5A3F6F;
+}
+
+.darkness {
+    position: absolute;
+    top: 50px;
+    font-size: 3em;
+    color: #5A3F6F;
+}
+
+.my {
+    position: relative;
+    left: 80px;
+    top: 90px;
+    font-size: 7em;
+    color: #5A3F6F;
+    opacity: .75;
+}
+
+.old {
+    position:absolute;
+    top: 150px;
+    font-size: 4em;
+    color: #5A3F6F;
+    opacity: .25;
+}
+
+.friend {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    font-size: 2em;
+    color: #5A3F6F;
+}
